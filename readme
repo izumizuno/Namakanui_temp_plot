@@ -1,0 +1,22 @@
+This is the python module to check Namakanui temperature 
+
+Location of temperature log:
+The log is recorded in summit machine like Koloa
+Temperature infromation is logged under /jac_logs/namakanui_temp.log
+
+Usage:
+(1)copy namakanui_temp.log in Namakanui_temp_plot folder
+(2)start python3 on your terminal at Namakanui_temp_plot
+(3)type in below in python3 enviroment to load data and module, 
+	import TempInfo
+	data = TempInfo()
+(4)To get pll temperature plot use data.PllTemp or data,PllTemp_1day
+   To get histgram of data existance by time use data.Hist or Data.Hist_1day
+ 
+Father detail: 
+use helo like 
+ help(TempInfo)
+ help(data.TempInfo) #after you load data to data
+
+enviroment:
+python3
